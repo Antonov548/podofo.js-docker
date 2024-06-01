@@ -17,4 +17,4 @@ RUN wget https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.12.tar.xz &&
     emmake make &&\
     make install
 
-RUN emcc -s USE_ZLIB=1 -s USE_FREETYPE=1 -E .
+RUN emcc -s USE_ZLIB=1 -s USE_FREETYPE=1 -s USE_LIBJPEG=1 -E .
